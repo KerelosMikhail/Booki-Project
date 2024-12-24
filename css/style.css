@@ -266,3 +266,94 @@ body {
   height: 49px;
   overflow: hidden;
 }
+/********** Filter part 5 project 2 ***********/
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+  width: 770px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.filter-label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21.13px;
+  margin: 0;
+  align-content: center;
+}
+
+.button-container {
+  display: flex;
+  height: 50px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.button-wrapper {
+  border: 2px solid #d9d9d9;
+  height: 50px;
+  gap: 10px;
+  padding: 4px 19px 4px 19px;
+  border-radius: 25px;
+  justify-content: center;
+  justify-items: center;
+  transition: background-color 0.3s;
+  align-items: center;
+  align-content: center;
+}
+
+.button-wrapper:hover {
+  background-color: #deebff;
+}
+
+.icon-button {
+  font: Raleway;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 19.96px;
+  height: 20px;
+  justify-items: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+  position: relative;
+  cursor: none;
+}
+
+.icon-button:hover {
+  background-color: #deebff;
+  transform: scale(1.1);
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+.icon-button::after {
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 55.2L0 426c0 12.2 9.9 22 22 22c6.3 0 12.4-2.7 16.6-7.5L121.2 346l58.1 116.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9L179.8 320l118.1 0c12.2 0 22.1-9.9 22.1-22.1c0-6.3-2.7-12.3-7.4-16.5L38.6 37.9C34.3 34.1 28.9 32 23.2 32C10.4 32 0 42.4 0 55.2z" fill="white" stroke="black" stroke-width="3" outline="black"/></svg>');
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-20%, -20%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  display: none;
+}
+
+.icon-button:hover::after {
+  display: block;
+}
