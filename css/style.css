@@ -69,6 +69,11 @@ body {
 /****** Accommodation ***********/
 .accommodation {
   width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
 }
 
 /****** Popular ***********/
@@ -269,14 +274,12 @@ body {
 /********** Filter part 5 project 2 ***********/
 .filter-section {
   display: flex;
-  align-items: center;
   gap: 15px;
   height: 50px;
-  width: 770px;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  justify-items: center;
+  justify-content: start;
+  justify-items: start;
   margin: 20px 0;
 }
 
@@ -333,6 +336,10 @@ body {
   cursor: none;
 }
 
+.icon-button .icon {
+  margin-right: 10px;
+}
+
 .icon-button:hover {
   background-color: #deebff;
   transform: scale(1.1);
@@ -356,4 +363,76 @@ body {
 
 .icon-button:hover::after {
   display: block;
+}
+/********** Accommodation part 6 project 2 ***********/
+.accommodation-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.accommodation-more {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-around;
+  height: 207.25px;
+  margin: 30px;
+}
+
+.card-container .card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  height: inherit;
+  gap: 4px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-container img {
+  width: 250.3px;
+  height: 124px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.card-container .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.card-container .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.card-container .card-subtitle {
+  font-size: 14px;
+  height: 16px;
+  margin: 0;
+}
+
+.card-container .card-rating {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 13.25px;
+}
+
+.dollar {
+  font-weight: 700;
+}
+
+.accommodation-more {
+  margin-top: 20px;
 }
