@@ -147,7 +147,6 @@ body {
   font-size: 16px;
   padding: 5px 10px;
   border: 2px solid transparent;
-  border-radius: 5px;
 }
 
 .nav-links a:hover,
@@ -181,6 +180,7 @@ body {
   height: 18px;
   top: 15px;
   left: 18px;
+  background-color: #f2f2f2;
 }
 
 .search-section-location {
@@ -363,7 +363,7 @@ body {
 .icon-button:hover::after {
   display: block;
 }
-/********** Accommodation part 6 project 2 ***********/
+/********** Accommodation part 6,7 project 2 ***********/
 .accommodation-title {
   font-size: 22px;
   font-weight: bold;
@@ -453,4 +453,36 @@ body {
 
 .accommodation-more {
   margin-top: 20px;
+}
+
+.information-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  justify-items: start;
+  gap: 10px;
+  align-items: center;
+}
+
+.information-text {
+  font-size: 16px;
+}
+
+.icon-info {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f2f2f2;
+}
+
+.icon-info i {
+  font-size: small;
+}
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
