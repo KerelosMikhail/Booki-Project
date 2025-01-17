@@ -7,7 +7,8 @@
     5. Accommodation part 6,7 project 2
     6. Acctivity
     7. Footer
-
+    8. Tablet
+    9. Mobile
 */
 
 /****** 1. General - start ***********/
@@ -559,7 +560,7 @@ body {
 }
 /****** 7. Footer - End ***********/
 
-/****** Tablet - Start ***********/
+/****** 8. Tablet - Start ***********/
 @media screen and (max-width: 900px) and (min-width: 601px) {
   body {
     margin: auto 12px;
@@ -633,9 +634,9 @@ body {
     margin-top: 20px;
   }
 }
-/****** Tablet - End *************/
+/****** 8. Tablet - End *************/
 
-/****** Mobile - Start **********
+/****** 9. Mobile - Start ***********/
 @media screen and (max-width: 600px) {
   .search-form {
     flex-wrap: wrap;
@@ -652,5 +653,161 @@ body {
     display: inline;
     font-size: 20px;
   }
+
+  .header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    align-self: center;
+    padding: 30px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    border: 2px solid transparent;
+    position: relative;
+  }
+
+  .nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0065fc;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    align-items: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .h1-title {
+    width: 70%;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .search-form {
+    justify-content: center;
+  }
+
+  /*  .filter-section {    // TODO
+    width: 335px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+  }
+
+  .filter-label {
+    font-size: large;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+  } */
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .button-wrapper {
+    flex: 1 1 calc(50% - 10px);
+    padding: 10px;
+  }
+
+  .information-section {
+    padding-top: 35px;
+  }
+
+  .accommodation-and-popular {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+  }
+
+  .popular {
+    order: 1;
+    width: 100%;
+  }
+
+  .accommodation {
+    order: 2;
+    width: 100%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: scroll;
+  }
+
+  .activity-cards .card,
+  .card-container .card {
+    width: 100%;
+  }
+  .activity-cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+  }
+
+  .activity-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    height: 200px;
+    width: 315px;
+  }
+
+  .activity-img {
+    display: block;
+    max-width: 100%;
+    height: 141px;
+    width: 315px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: inherit;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-column {
+    width: 100%;
+    padding: 20px;
+  }
 }
-/****** Mobile - End ***********/
+
+/****** 9. Mobile - End ***********/
