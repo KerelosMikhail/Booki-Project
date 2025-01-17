@@ -558,3 +558,47 @@ body {
   margin-bottom: 15px;
 }
 /****** 7. Footer - End ***********/
+
+/****** Tablet - Start ***********/
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  /* 
+    .filter-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .information-section,
+  .accommodation-section,
+  .popular-section,
+  .activity-section,
+  footer {
+    display: block;
+    margin-bottom: 20px;
+  } */
+}
+/****** Tablet - End *************/
+
+/****** Mobile - Start ***********/
+@media screen and (max-width: 600px) {
+  .search-form {
+    flex-wrap: wrap;
+  }
+
+  .search-section.input input {
+    width: 100%;
+  }
+
+  .search-section.button .search-text {
+    display: none;
+  }
+  .search-section.button .search-icon {
+    display: inline;
+    font-size: 20px;
+  }
+}
+/****** Mobile - End ***********/
