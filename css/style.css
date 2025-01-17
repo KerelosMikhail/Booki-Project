@@ -1,4 +1,12 @@
-/****** General ***********/
+/****** Table of contents***********/
+/*
+  1. General
+  2. Accommodation And Popular
+ 
+
+*/
+
+/****** 1. General - start ***********/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -47,15 +55,12 @@ body {
   font-size: 16px;
 }
 
-.euro {
-  font-weight: 700;
-}
-
 .neutralStar {
   color: var(--main-bg-color);
 }
+/****** 1. General - End ***********/
 
-/****** Accommodation And Popular ***********/
+/****** 2. Accommodation And Popular - Start ***********/
 .accommodation-and-popular {
   display: flex;
   justify-content: space-between;
@@ -122,6 +127,7 @@ body {
 .popular-cards .card-rating {
   margin-bottom: 5px;
 }
+/****** 2. Accommodation And Popular - End ***********/
 
 /********** Part 3 and 4 project 2 ***********/
 .header {
@@ -243,24 +249,6 @@ body {
 
 .search-icon {
   display: none;
-}
-
-@media (max-width: 600px) {
-  .search-form {
-    flex-wrap: wrap;
-  }
-
-  .search-section.input input {
-    width: 100%;
-  }
-
-  .search-section.button .search-text {
-    display: none;
-  }
-  .search-section.button .search-icon {
-    display: inline;
-    font-size: 20px;
-  }
 }
 
 .search-container {
@@ -396,7 +384,7 @@ body {
   padding-bottom: 15px;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width: 25%;
+  width: 33.333%;
   overflow: visible;
 }
 
@@ -503,7 +491,7 @@ body {
   height: 207.25px;
   width: 100%;
   justify-content: space-around;
-
+  gap: 0;
   margin-top: 5px;
   height: inherit;
   padding-bottom: 15px;
@@ -522,6 +510,8 @@ body {
   border-top-right-radius: 20px;
   object-fit: cover;
   aspect-ratio: inherit;
+  margin: 0;
+  gap: 0;
 }
 
 .activity-cards .card-title {
@@ -530,3 +520,30 @@ body {
   margin-left: 19px;
   margin-right: 19px;
 }
+
+/****** Tablet - Start ***********/
+*
+
+/****** Tablet End ***********/*
+
+/****** Mobile - End ***********/*
+
+@media (max-width: 600px) {
+  .search-form {
+    flex-wrap: wrap;
+  }
+
+  .search-section.input input {
+    width: 100%;
+  }
+
+  .search-section.button .search-text {
+    display: none;
+  }
+  .search-section.button .search-icon {
+    display: inline;
+    font-size: 20px;
+  }
+}
+
+//****** Mobile - End ***********
