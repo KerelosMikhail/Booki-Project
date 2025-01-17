@@ -1,8 +1,12 @@
 /****** Table of contents***********/
 /*
-  1. General
-  2. Accommodation And Popular
- 
+    1. General
+    2. Popular
+    3. Part 3 and 4 project 2 
+    4. Filter part 5 project 2
+    5. Accommodation part 6,7 project 2
+    6. Acctivity
+    7. Footer
 
 */
 
@@ -25,13 +29,9 @@
 body {
   display: flex;
   justify-content: center;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.main-container {
-  width: 100%;
-  padding: 0 50px;
   box-sizing: border-box;
 }
 
@@ -58,9 +58,7 @@ body {
 .neutralStar {
   color: var(--main-bg-color);
 }
-/****** 1. General - End ***********/
 
-/****** 2. Accommodation And Popular - Start ***********/
 .accommodation-and-popular {
   display: flex;
   justify-content: space-between;
@@ -72,18 +70,9 @@ body {
   padding: 30px;
   box-sizing: border-box;
 }
+/****** 1. General - End *************/
 
-/****** Accommodation ***********/
-.accommodation {
-  width: 65%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  overflow: hidden;
-}
-
-/****** Popular ***********/
+/****** 2. Popular - Start ***********/
 .popular {
   width: 32%;
 }
@@ -127,9 +116,9 @@ body {
 .popular-cards .card-rating {
   margin-bottom: 5px;
 }
-/****** 2. Accommodation And Popular - End ***********/
+/****** 2. Popular - End ***********/
 
-/********** Part 3 and 4 project 2 ***********/
+/********** 3. Part 3 and 4 project 2 - Start ***********/
 .header {
   display: flex;
   justify-content: space-between;
@@ -261,7 +250,9 @@ body {
   height: 49px;
   overflow: hidden;
 }
-/********** Filter part 5 project 2 ***********/
+/********** 3. Part 3 and 4 project 2 - End ***********/
+
+/********** 4. Filter part 5 project 2 - Start ***********/
 .filter-section {
   display: flex;
   gap: 15px;
@@ -353,7 +344,18 @@ body {
 .icon-button:hover::after {
   display: block;
 }
-/********** Accommodation part 6,7 project 2 ***********/
+/********** 4. Filter part 5 project 2 - End ***********/
+
+/********** 5. Accommodation part 6,7 project 2 - Start ***********/
+.accommodation {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
 .accommodation-title {
   font-size: 22px;
   font-weight: bold;
@@ -477,8 +479,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+/********** 5. Accommodation part 6,7 project 2 - End ***********/
 
-/****** Acctivity ***********/
+/****** 6. Acctivity - Start ***********/
 .activity {
   padding: 30px;
   gap: 30px;
@@ -522,30 +525,36 @@ body {
   margin-left: 19px;
   margin-right: 19px;
 }
+/****** 6. Acctivity - End ***********/
 
-/****** Tablet - Start ***********/
-*
-
-/****** Tablet End ***********/*
-
-/****** Mobile - End ***********/*
-
-@media (max-width: 600px) {
-  .search-form {
-    flex-wrap: wrap;
-  }
-
-  .search-section.input input {
-    width: 100%;
-  }
-
-  .search-section.button .search-text {
-    display: none;
-  }
-  .search-section.button .search-icon {
-    display: inline;
-    font-size: 20px;
-  }
+/****** 7. Footer - Start ***********/
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  width: 100%;
 }
 
-//****** Mobile - End ***********
+.footer-column {
+  padding: 20px;
+  gap: 15px;
+  width: 33.333%;
+}
+
+.footer-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-list {
+  padding-left: 0;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-list li {
+  margin-bottom: 15px;
+}
+/****** 7. Footer - End ***********/
