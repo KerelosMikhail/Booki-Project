@@ -490,15 +490,18 @@ body {
   gap: 30px;
   height: 207.25px;
   width: 100%;
-  justify-content: space-around;
-  gap: 0;
+  justify-content: space-between;
+  gap: 30px;
   margin-top: 5px;
   height: inherit;
   padding-bottom: 15px;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width: 100%;
   overflow: visible;
+}
+
+.activity-cards .card {
+  padding: 0;
 }
 
 .activity-img {
@@ -511,7 +514,6 @@ body {
   object-fit: cover;
   aspect-ratio: inherit;
   margin: 0;
-  gap: 0;
 }
 
 .activity-cards .card-title {
