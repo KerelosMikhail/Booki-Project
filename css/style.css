@@ -1,4 +1,12 @@
-/****** General ***********/
+/****** Table of contents***********/
+/*
+  1. General
+  2. Accommodation And Popular
+ 
+
+*/
+
+/****** 1. General - start ***********/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -17,6 +25,8 @@
 body {
   display: flex;
   justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -45,15 +55,12 @@ body {
   font-size: 16px;
 }
 
-.euro {
-  font-weight: 700;
-}
-
 .neutralStar {
   color: var(--main-bg-color);
 }
+/****** 1. General - End ***********/
 
-/****** Accommodation And Popular ***********/
+/****** 2. Accommodation And Popular - Start ***********/
 .accommodation-and-popular {
   display: flex;
   justify-content: space-between;
@@ -120,6 +127,7 @@ body {
 .popular-cards .card-rating {
   margin-bottom: 5px;
 }
+/****** 2. Accommodation And Popular - End ***********/
 
 /********** Part 3 and 4 project 2 ***********/
 .header {
@@ -147,7 +155,6 @@ body {
   font-size: 16px;
   padding: 5px 10px;
   border: 2px solid transparent;
-  border-radius: 5px;
 }
 
 .nav-links a:hover,
@@ -181,6 +188,7 @@ body {
   height: 18px;
   top: 15px;
   left: 18px;
+  background-color: #f2f2f2;
 }
 
 .search-section-location {
@@ -243,24 +251,6 @@ body {
   display: none;
 }
 
-@media (max-width: 600px) {
-  .search-form {
-    flex-wrap: wrap;
-  }
-
-  .search-section.input input {
-    width: 100%;
-  }
-
-  .search-section.button .search-text {
-    display: none;
-  }
-  .search-section.button .search-icon {
-    display: inline;
-    font-size: 20px;
-  }
-}
-
 .search-container {
   display: flex;
   border: 2px solid #f2f2f2;
@@ -320,7 +310,6 @@ body {
 }
 
 .icon-button {
-  font: Raleway;
   display: flex;
   align-items: center;
   border: none;
@@ -364,7 +353,7 @@ body {
 .icon-button:hover::after {
   display: block;
 }
-/********** Accommodation part 6 project 2 ***********/
+/********** Accommodation part 6,7 project 2 ***********/
 .accommodation-title {
   font-size: 22px;
   font-weight: bold;
@@ -395,7 +384,7 @@ body {
   padding-bottom: 15px;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width: 25%;
+  width: 33.333%;
   overflow: visible;
 }
 
@@ -431,6 +420,7 @@ body {
   font-size: 14px;
   height: 16px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .card-container .card-rating {
@@ -455,3 +445,105 @@ body {
 .accommodation-more {
   margin-top: 20px;
 }
+
+.information-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  justify-items: start;
+  gap: 10px;
+  align-items: center;
+}
+
+.information-text {
+  font-size: 16px;
+}
+
+.icon-info {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f2f2f2;
+}
+
+.icon-info i {
+  font-size: small;
+}
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/****** Acctivity ***********/
+.activity {
+  padding: 30px;
+  gap: 30px;
+}
+
+.activity-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 207.25px;
+  width: 100%;
+  justify-content: space-around;
+  gap: 0;
+  margin-top: 5px;
+  height: inherit;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 100%;
+  overflow: visible;
+}
+
+.activity-img {
+  display: block;
+  max-width: 100%;
+  height: 380px;
+  width: 297.5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  aspect-ratio: inherit;
+  margin: 0;
+  gap: 0;
+}
+
+.activity-cards .card-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+/****** Tablet - Start ***********/
+*
+
+/****** Tablet End ***********/*
+
+/****** Mobile - End ***********/*
+
+@media (max-width: 600px) {
+  .search-form {
+    flex-wrap: wrap;
+  }
+
+  .search-section.input input {
+    width: 100%;
+  }
+
+  .search-section.button .search-text {
+    display: none;
+  }
+  .search-section.button .search-icon {
+    display: inline;
+    font-size: 20px;
+  }
+}
+
+//****** Mobile - End ***********
