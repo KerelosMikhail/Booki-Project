@@ -7,7 +7,8 @@
     5. Accommodation part 6,7 project 2
     6. Acctivity
     7. Footer
-
+    8. Tablet
+    9. Mobile
 */
 
 /****** 1. General - start ***********/
@@ -123,19 +124,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0 20px;
+  padding: 10px 0 10px;
   flex-wrap: wrap;
 }
 
 .logo img {
   height: 19px;
   width: auto;
-  align-self: center;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
 }
 
 .nav-links a {
@@ -144,16 +143,32 @@ body {
   font-size: 16px;
   padding: 5px 10px;
   border: 2px solid transparent;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0065fc;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .nav-links a:hover,
-.nav-links a:focus {
+.nav-links a:focus,
+.nav-links a:active {
   color: #0065fc;
-  letter-spacing: 0.01em;
-  border-bottom: white;
-  border-left: white;
-  border-right: white;
-  border-color: blue;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after,
+.nav-links a:active::after {
+  transform: scaleX(1);
 }
 
 .main-title {
@@ -255,45 +270,39 @@ body {
 /********** 4. Filter part 5 project 2 - Start ***********/
 .filter-section {
   display: flex;
+  flex-direction: row;
   gap: 15px;
   height: 50px;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: start;
   justify-items: start;
-  margin: 20px 0;
+  align-items: center;
 }
 
 .filter-label {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.13px;
-  margin: 0;
-  align-content: center;
 }
 
 .button-container {
   display: flex;
+  flex-direction: column;
   height: 50px;
   gap: 10px;
   flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
   align-items: center;
-  align-content: center;
 }
 
 .button-wrapper {
+  display: flex;
   border: 2px solid #d9d9d9;
   height: 50px;
   gap: 10px;
   padding: 4px 19px 4px 19px;
   border-radius: 25px;
-  justify-content: center;
-  justify-items: center;
   transition: background-color 0.3s;
   align-items: center;
-  align-content: center;
+  justify-content: center;
 }
 
 .button-wrapper:hover {
@@ -318,6 +327,8 @@ body {
 
 .icon-button .icon {
   margin-right: 10px;
+  width: 22px;
+  height: 22px;
 }
 
 .icon-button:hover {
@@ -366,11 +377,15 @@ body {
   font-weight: bold;
 }
 
+.accommodation-more a {
+  text-decoration: none;
+  color: black;
+}
+
 .card-container {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  height: 207.25px;
   margin: 0 0 50px;
   width: 100%;
   justify-content: space-around;
@@ -444,22 +459,21 @@ body {
   font-weight: 700;
 }
 
-.accommodation-more {
-  margin-top: 20px;
-}
-
 .information-section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: start;
   justify-items: start;
-  gap: 10px;
   align-items: center;
+  padding: 10px 10px;
+  flex-wrap: nowrap;
 }
 
 .information-text {
   font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
 }
 
 .icon-info {
@@ -469,12 +483,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #d9d9d9;
 }
 
 .icon-info i {
   font-size: small;
 }
+
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -550,6 +565,7 @@ body {
 .footer-list {
   padding-left: 0;
   list-style: none;
+  text-decoration: none;
   font-size: 16px;
   font-weight: 400;
 }
@@ -557,4 +573,260 @@ body {
 .footer-list li {
   margin-bottom: 15px;
 }
+
+.footer-list li a {
+  text-decoration: none;
+  color: black;
+}
 /****** 7. Footer - End ***********/
+
+/****** 8. Tablet - Start ***********/
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  body {
+    margin: 0 50px;
+  }
+
+  .nav-links {
+    margin: 0 35px;
+  }
+
+  .logo img {
+    margin: 0 20px;
+  }
+
+  .main-title {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h1-title {
+    font-size: 22px;
+    margin: 20px 0 0;
+  }
+
+  .search-container {
+    margin: 0 20px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .filter-section {
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: start;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    padding-bottom: 35px;
+  }
+
+  .information-section {
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+
+  .filter-label {
+    display: block;
+    margin-bottom: 10px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .button-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+
+  .accommodation-and-popular {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .accommodation {
+    width: 100%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .popular-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .popular-cards .card {
+    width: 33.333%;
+  }
+
+  .accommodation-section,
+  .popular-section,
+  .activity-section,
+  footer {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .activity-img {
+    height: 200px;
+    width: 193.5px;
+  }
+
+  .popular-cards .card {
+    margin-top: 20px;
+  }
+
+  body,
+  .main-container {
+    margin: 0;
+    padding: 0;
+  }
+}
+/****** 8. Tablet - End *************/
+
+/****** 9. Mobile - Start ***********/
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo img {
+    align-self: center;
+    padding: 30px;
+  }
+
+  .nav-links a::after {
+    top: auto;
+    bottom: 0;
+  }
+
+  .main-title {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h1-title {
+    font-size: 22px;
+    margin: 20px 0 0;
+  }
+
+  .search-container {
+    width: 90%;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .search-section.button .search-text {
+    display: none;
+  }
+
+  .search-section.button .search-icon {
+    display: inline;
+    font-size: 20px;
+  }
+
+  .filter-section {
+    height: auto;
+    margin: 0 10px;
+  }
+
+  .button-container {
+    flex-direction: unset;
+    height: auto;
+  }
+
+  .button-wrapper {
+    width: 135px;
+  }
+
+  .text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.44px;
+  }
+
+  .filter-label {
+    margin: 0 10px;
+  }
+
+  .information-section {
+    margin: 0 10px;
+  }
+
+  .accommodation-and-popular {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .accommodation-and-popular section {
+    border-radius: 0px;
+  }
+
+  .popular {
+    order: 1;
+    width: 100%;
+  }
+
+  .accommodation {
+    order: 2;
+    width: 100%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .activity-cards .card,
+  .card-container .card {
+    width: 100%;
+  }
+  .activity-cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+  }
+
+  .activity-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    height: 200px;
+    width: 315px;
+  }
+
+  .activity-img {
+    display: block;
+    max-width: 100%;
+    height: 141px;
+    width: 315px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: inherit;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    width: 100%;
+    padding: 20px;
+  }
+
+  body,
+  .main-container {
+    margin: 0;
+    padding: 0;
+  }
+}
+/****** 9. Mobile - End ***********/
