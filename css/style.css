@@ -124,7 +124,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px 0;
+  padding: 10px 0 10px;
   flex-wrap: wrap;
 }
 
@@ -135,7 +135,6 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 20px;
 }
 
 .nav-links a {
@@ -588,10 +587,32 @@ body {
   }
 
   .nav-links {
-    margin-right: 35px;
+    margin: 0 35px;
+  }
+
+  .logo img {
+    margin: 0 20px;
+  }
+
+  .main-title {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h1-title {
+    font-size: 22px;
+    margin: 20px 0 0;
+  }
+
+  .search-container {
+    margin: 0 20px;
+    align-items: center;
+    justify-content: start;
   }
 
   .filter-section {
+    margin: 0 20px;
     flex-direction: column;
     align-items: start;
     align-self: flex-start;
@@ -601,6 +622,7 @@ body {
 
   .information-section {
     margin-top: 35px;
+    margin-left: 20px;
   }
 
   .filter-label {
@@ -655,6 +677,12 @@ body {
 
   .popular-cards .card {
     margin-top: 20px;
+  }
+
+  body,
+  .main-container {
+    margin: 0;
+    padding: 0;
   }
 }
 /****** 8. Tablet - End *************/
