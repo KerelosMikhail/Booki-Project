@@ -592,13 +592,11 @@ body {
   }
 
   .filter-section {
-    display: flex;
     flex-direction: column;
     align-items: start;
     align-self: flex-start;
     flex-wrap: nowrap;
     padding-bottom: 35px;
-    height: 50px;
   }
 
   .information-section {
@@ -613,7 +611,6 @@ body {
   }
 
   .button-container {
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 20px;
