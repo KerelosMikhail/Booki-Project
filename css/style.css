@@ -363,6 +363,11 @@ body {
   font-weight: bold;
 }
 
+.accommodation-more a {
+  text-decoration: none;
+  color: black;
+}
+
 .card-container {
   display: flex;
   flex-direction: row;
@@ -452,6 +457,7 @@ body {
   justify-items: start;
   gap: 10px;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .information-text {
@@ -553,6 +559,11 @@ body {
 
 .footer-list li {
   margin-bottom: 15px;
+}
+
+.footer-list li a {
+  text-decoration: none;
+  color: black;
 }
 /****** 7. Footer - End ***********/
 
